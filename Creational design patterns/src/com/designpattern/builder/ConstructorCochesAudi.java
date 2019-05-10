@@ -2,6 +2,12 @@ package com.designpattern.builder;
 
 public class ConstructorCochesAudi extends ConstructorCoches{
 	
+	public ConstructorCochesAudi()
+	{
+		super();
+		this.coche.setMarca("Audi");
+	}
+	
 	public void construirMotor()
 
     {

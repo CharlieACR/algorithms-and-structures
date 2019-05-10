@@ -1,6 +1,14 @@
 package com.designpattern.builder;
 
 public class ConstructorCochesTesla extends ConstructorCoches{
+
+	
+	public ConstructorCochesTesla()
+	{
+		super();
+		this.coche.setMarca("Tesla");
+	}
+	
 	
 	public void construirMotor()
     {

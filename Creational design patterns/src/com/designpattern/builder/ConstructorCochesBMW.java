@@ -3,6 +3,12 @@ package com.designpattern.builder;
 public class ConstructorCochesBMW extends ConstructorCoches{
 	
 
+	public ConstructorCochesBMW()
+	{
+		super();
+		this.coche.setMarca("BMW");
+	}
+
 	public void construirMotor()
     {
             coche.cilindrada(4395).potencia(560);
