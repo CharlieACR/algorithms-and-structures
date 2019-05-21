@@ -18,6 +18,24 @@ public class Nodo {
 		left = null;
 		right = null;
 	}
+	
+	public void insert(int value)
+	{
+		if(value<this.data)
+		{
+			if(left==null)
+				left = new Nodo();
+			else
+				left.insert(value);
+		}
+		else if(value>data)
+		{
+			if(right == null)
+				right = new Nodo(value);
+			else
+				right.insert(value);
+		}
+	}
 
 	public int getData() {
 		return data;

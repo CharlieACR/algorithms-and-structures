@@ -13,6 +13,20 @@ public class arbol {
 		raiz = new Nodo(dato);
 	}
 	
+	public void insertNode(int value)
+	{
+		if(raiz==null)
+		{
+			raiz = new Nodo();
+		}
+		else
+		{
+			raiz.insert(value);
+		}
+	}
+	
+	
+	
 	public void nuevoArbol(Nodo izq, int dato, Nodo der)
 	{
 		raiz = new Nodo(dato);
